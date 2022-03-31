@@ -14,51 +14,60 @@
           /*display: inline; */
           margin: 0px;
       }
-      ul {
+      #grid ul {
         border-right: 3px solid gray;
         width : 260px;
         margin: 0px;
         padding: 20px;
+        padding-left: 40px;
       }
       body {
         margin:0px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 350px 1fr;
       }
     </style>
   </head>
 
   <body>
     <h1><a href="index.html" title="강의 소개 페이지" style="color:#FF69B4; text-decoration:none;">
-      C++ 알고리즘 입문강의</a></h1>
+    C++ 알고리즘 입문강의</a></h1>
+      <div id="grid">
+        <div>
+          <ul>
+            <li><a href="0.html">0주차.</a> OT</li>
+            <li><a href="1.html">1주차.</a> 데이터타입, 조건문, STL</li>
+            <li><a href="2.html">2주차.</a> 배열, 벡터, 반복문, <strong>완전탐색</strong></li>
+            <li><a href="3.html">3주차.</a> 구조체, <strong>정렬</strong>, 비교함수</li>
+            <li><a href="4.html">4주차.</a> 재귀함수, <strong>백트래킹</strong></li>
+            <li><a href="5.html">5주차.</a> <strong>DP</strong></li>
+            <li><a href="6.html">6주차.</a> <strong>그리디</strong>, 시간복잡도</li>
+            <li><a href="7.html">7주차.</a> <strong>스택, 큐, 덱</strong></li>
+            <li><a href="8.html">8주차.</a> 그래프, <strong>그래프탐색</strong></li>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </ul>
+        </div>
+        <div>
+          <h2>[2022-1 HI-ARC 알고리즘 스터디]</h2>
+          <p style="margin-top:10px;">
+            <strong>C++</strong>과 <strong>알고리즘</strong>을
+            <u>처음 배우시는 분들</u>을 대상으로 하는 강의입니다.
+            <br>
+            <img src=".\study_introduction.jpg" width="400">
+          </p>
 
-    <ul>
-      <li><a href="0.html">0주차.</a> OT</li>
-      <li><a href="1.html">1주차.</a> 데이터타입, 조건문, STL</li>
-      <li><a href="2.html">2주차.</a> 배열, 벡터, 반복문, <strong>완전탐색</strong></li>
-      <li><a href="3.html">3주차.</a> 구조체, <strong>정렬</strong>, 비교함수</li>
-      <li><a href="4.html">4주차.</a> 재귀함수, <strong>백트래킹</strong></li>
-      <li><a href="5.html">5주차.</a> <strong>DP</strong></li>
-      <li><a href="6.html">6주차.</a> <strong>그리디</strong>, 시간복잡도</li>
-      <li><a href="7.html">7주차.</a> <strong>스택, 큐, 덱</strong></li>
-      <li><a href="8.html">8주차.</a> 그래프, <strong>그래프탐색</strong></li>
-    </ul>
-
-    <br><br><br>
-    <h2>[2022-1 HI-ARC 알고리즘 스터디]</h2>
-    <p style="margin-top:10px;">
-      <strong>C++</strong>과 <strong>알고리즘</strong>을
-      <u>처음 배우시는 분들</u>을 대상으로 하는 강의입니다.
-      <br>
-      <img src=".\study_introduction.jpg" width="400">
-    </p>
-
-    <h2>[강사 소개]</h2>
-    <h3>이지은(<a href="https://solved.ac/profile/leeju1013"
-    target="_blank" title="solved.ac profile">leeju1013</a>)</h3>
-    <p>
-      <li>홍익대학교 컴퓨터공학과 20학번</li>
-      <li>2022 ICPC Sinchon Camp Contest 초급 2등
-        (<a href="https://www.acmicpc.net/contest/spotboard/759" target="_blank">스코어보드</a>)</li>
-      <li><a href="https://ezeun.tistory.com/" target="_blank" title="ezeun.tistory.com">블로그</a></li>
-    </p>
+          <h2>[강사 소개]</h2>
+          <h3>이지은(<a href="https://solved.ac/profile/leeju1013"
+          target="_blank" title="solved.ac profile">leeju1013</a>)</h3>
+          <p>
+            <li>홍익대학교 컴퓨터공학과 20학번</li>
+            <li>2022 ICPC Sinchon Camp Contest 초급 2등
+              (<a href="https://www.acmicpc.net/contest/spotboard/759" target="_blank">스코어보드</a>)</li>
+            <li><a href="https://ezeun.tistory.com/" target="_blank" title="ezeun.tistory.com">블로그</a></li>
+          </p>
+      </div>
+    </div>
   </body>
 </html>
