@@ -22,11 +22,19 @@
         padding-left: 40px;
       }
       body {
-        margin:0px;
+        margin:30px;
       }
       #grid{
         display: grid;
         grid-template-columns: 350px 1fr;
+      }
+      @media(max-width: 850px){
+        #grid{
+          display: block;
+        }
+        #grid ul{
+          border-right: none;
+        }
       }
     </style>
   </head>
@@ -46,7 +54,7 @@
             <li><a href="6.html">6주차.</a> <strong>그리디</strong>, 시간복잡도</li>
             <li><a href="7.html">7주차.</a> <strong>스택, 큐, 덱</strong></li>
             <li><a href="8.html">8주차.</a> 그래프, <strong>그래프탐색</strong></li>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br>
           </ul>
         </div>
         <div>
