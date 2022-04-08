@@ -4,17 +4,13 @@
     <title>leeju의 C++ 알고리즘 입문강의</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-    <h1><a href="index.html" title="강의 소개 페이지" style="color:#FF69B4; text-decoration:none;">
-    C++ 알고리즘 입문강의</a></h1>
-      <input type="button" value="night" onclick="
+    <script>
+      function nightDayHandler(self){
         var target = document.querySelector('body');
-        if(this.value === 'night'){
+        if(self.value === 'night'){
           target.style.backgroundColor='black';
           target.style.color='white';
-          this.value ='day';
+          self.value ='day';
 
           var alist = document.querySelectorAll('a');
           alist[0].style.color = '#FF69B4';
@@ -27,7 +23,7 @@
         else{
           target.style.backgroundColor='white';
           target.style.color='black';
-          this.value ='night';
+          self.value ='night';
 
           var alist = document.querySelectorAll('a');
           alist[0].style.color = '#FF69B4';
@@ -37,6 +33,15 @@
             i = i + 1;
           }
         }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1><a href="index.html" title="강의 소개 페이지" style="color:#FF69B4; text-decoration:none;">
+    C++ 알고리즘 입문강의</a></h1>
+      <input type="button" value="night" onclick="
+        nightDayHandler(this);
       ">
 
       <div id="grid">
@@ -74,5 +79,8 @@
           </p>
       </div>
     </div>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
   </body>
 </html>
